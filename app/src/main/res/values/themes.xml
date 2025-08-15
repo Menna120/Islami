@@ -12,4 +12,22 @@
         <item name="postSplashScreenTheme">@style/Theme.Islami</item>
     </style>
 
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/gold</item>
+        <item name="itemIconSize">24dp</item>
+        <item name="itemIconTint">@color/bottom_nav_item_color</item>
+        <item name="itemTextColor">@color/bottom_nav_item_color</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.App.BottomNavigationView.Active</item>
+        <item name="activeIndicatorLabelPadding">24dp</item>
+        <item name="itemActiveIndicatorStyle">@style/App.Custom.Indicator</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/scrim</item>
+    </style>
+
+    <style name="TextAppearance.App.BottomNavigationView.Active" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/janna_lt_bold</item>
+    </style>
+
 </resources>

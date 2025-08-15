@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/background" />
+
+    <item
+        android:width="290dp"
+        android:height="160dp"
+        android:drawable="@drawable/mosque_outlined"
+        android:gravity="center_horizontal|top"
+        android:top="60dp" />
+
+    <item
+        android:width="88dp"
+        android:height="300dp"
+        android:drawable="@drawable/glow"
+        android:end="15dp"
+        android:gravity="top|end" />
+
+    <item
+        android:width="90dp"
+        android:height="190dp"
+        android:drawable="@drawable/shape_left"
+        android:gravity="top|start"
+        android:top="215dp" />
+
+    <item
+        android:width="175dp"
+        android:height="250dp"
+        android:drawable="@drawable/islami_logo"
+        android:gravity="center" />
+
+    <item
+        android:width="100dp"
+        android:height="215dp"
+        android:bottom="115dp"
+        android:drawable="@drawable/shape_right"
+        android:gravity="bottom|end" />
+
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:bottom="64dp"
+        android:drawable="@drawable/route"
+        android:gravity="bottom|center_horizontal" />
+
+</layer-list>
