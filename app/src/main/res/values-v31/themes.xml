@@ -4,7 +4,7 @@
     <style name="Theme.App.Starting" parent="Theme.SplashScreen.IconBackground">
         <item name="android:windowSplashScreenBackground">@color/black</item>
         <item name="android:windowSplashScreenBrandingImage">@drawable/route</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash_v31</item>
         <item name="postSplashScreenTheme">@style/Theme.Islami</item>
     </style>
 </resources>
