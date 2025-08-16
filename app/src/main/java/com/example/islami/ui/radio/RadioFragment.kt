@@ -4,28 +4,38 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import com.example.islami.R
+import androidx.lifecycle.ViewModelProvider
+import com.example.islami.databinding.FragmentRadioBinding
 
 class RadioFragment : Fragment() {
+    private var _binding: FragmentRadioBinding? = null
 
-    companion object {
-        fun newInstance() = RadioFragment()
-    }
-
-    private val viewModel: RadioViewModel by viewModels()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        // TODO: Use the ViewModel
-    }
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_radio, container, false)
+        val radioViewModel =
+            ViewModelProvider(this)[RadioViewModel::class.java]
+
+        _binding = FragmentRadioBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        val textView: TextView = binding.textNotifications
+        radioViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
+        return root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
