@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.islami.databinding.FragmentSurahBinding
-import com.example.islami.ui.quran.data.QuranSurah
+import com.example.islami.ui.quran.model.QuranSurah
 import com.example.islami.ui.surah.adapter.VersesAdapter
 
 private const val SURAH_NUMBER = "surah_number"

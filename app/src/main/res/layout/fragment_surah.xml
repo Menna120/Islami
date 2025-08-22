@@ -50,8 +50,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.App.HeadlineSmall"
         app:layout_constraintBottom_toBottomOf="@id/corner_left"
-        app:layout_constraintEnd_toStartOf="@+id/corner_right"
-        app:layout_constraintStart_toEndOf="@id/corner_left"
+        app:layout_constraintRight_toLeftOf="@+id/corner_right"
+        app:layout_constraintLeft_toRightOf="@id/corner_left"
         app:layout_constraintTop_toTopOf="@id/corner_left"
         tools:text="الفاتحه" />
 
