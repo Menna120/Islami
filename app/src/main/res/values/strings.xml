@@ -4,4 +4,5 @@
     <string name="title_hadith">Hadith</string>
     <string name="title_sebiha">Sebiha</string>
     <string name="title_radio">Radio</string>
+    <string name="navigate_up">Navigate Up</string>
 </resources>
