@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.islami.databinding.ItemQuranSurahBinding
-import com.example.islami.ui.quran.data.QuranSurah
+import com.example.islami.ui.quran.model.QuranSurah
 
 class QuranAdapter(
     val items: List<QuranSurah>,

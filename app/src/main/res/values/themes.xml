@@ -50,7 +50,7 @@
         <item name="android:textColor">?attr/colorPrimary</item>
     </style>
 
-    <style name="TextAppearance.App.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+    <style name="TextAppearance.App.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
         <item name="fontFamily">@font/janna_lt_bold</item>
         <item name="android:textSize">20sp</item>
     </style>

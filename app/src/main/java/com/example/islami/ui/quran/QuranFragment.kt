@@ -9,7 +9,7 @@ import com.example.islami.R
 import com.example.islami.databinding.FragmentQuranBinding
 import com.example.islami.ui.quran.adapter.QuranAdapter
 import com.example.islami.ui.quran.adapter.SurahListItemDecoration
-import com.example.islami.ui.quran.data.QuranSurah.Companion.quranSurah
+import com.example.islami.ui.quran.model.QuranSurah.Companion.quranSurah
 import com.example.islami.ui.surah.SurahFragment.Companion.surahFragmentWithArgument
 
 class QuranFragment : Fragment() {

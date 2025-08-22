@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.App.BodyLarge"
+        android:textAppearance="@style/TextAppearance.App.TitleLarge"
         android:textColor="?attr/colorPrimary"
         tools:text="[1] بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ" />
 </com.google.android.material.card.MaterialCardView>
