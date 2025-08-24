@@ -60,4 +60,9 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+    <style name="TextAppearance.App.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/janna_lt_bold</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
 </resources>

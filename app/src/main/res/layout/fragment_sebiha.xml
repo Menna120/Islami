@@ -30,17 +30,62 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/sebiha_head"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/sebiha_head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sebiha_body"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/sebiha_body"
+        app:layout_constraintTop_toBottomOf="@+id/logo_layout"
+        app:layout_constraintVertical_bias="0.16"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/sebiha_body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/sebiha_body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_layout"
+        app:layout_constraintVertical_bias="0.7" />
+
     <TextView
-        android:id="@+id/text_notifications"
+        android:id="@+id/tasbih_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_medium"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginEnd="@dimen/margin_medium"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo_layout" />
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.App.DisplaySmall"
+        android:textColor="?attr/colorTertiary"
+        app:layout_constraintBottom_toTopOf="@+id/tasbih_count"
+        app:layout_constraintEnd_toEndOf="@+id/sebiha_body"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/sebiha_body"
+        app:layout_constraintTop_toTopOf="@+id/sebiha_body"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="الْلَّهُم صَلِّ وَسَلِم وَبَارِك عَلَى سَيِّدِنَا مُحَمَّد" />
+
+    <TextView
+        android:id="@+id/tasbih_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.App.DisplaySmall"
+        android:textColor="?attr/colorTertiary"
+        app:layout_constraintBottom_toBottomOf="@+id/sebiha_body"
+        app:layout_constraintEnd_toEndOf="@+id/tasbih_text"
+        app:layout_constraintStart_toStartOf="@+id/tasbih_text"
+        app:layout_constraintTop_toBottomOf="@+id/tasbih_text"
+        tools:text="33" />
 </androidx.constraintlayout.widget.ConstraintLayout>
