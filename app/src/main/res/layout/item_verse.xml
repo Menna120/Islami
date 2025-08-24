@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="4dp"
+    android:layout_marginVertical="@dimen/margin_small"
     app:cardBackgroundColor="?attr/backgroundColor"
-    app:cardCornerRadius="16dp"
+    app:cardCornerRadius="@dimen/card_corner_radius"
     app:cardPreventCornerOverlap="true"
-    app:contentPadding="16dp"
+    app:contentPadding="@dimen/padding_large"
     app:strokeColor="?attr/colorPrimary"
     app:strokeWidth="@dimen/card_stroke_width">
 

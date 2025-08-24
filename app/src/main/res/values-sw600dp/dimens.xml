@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="last_item_bottom_margin">32dp</dimen>
+    <dimen name="card_stroke_width">1dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="space_xlarge">32dp</dimen>
+    <dimen name="card_corner_radius">24dp</dimen>
+    <dimen name="corner_radius_xlarge">32dp</dimen>
+    <dimen name="elevation_medium">8dp</dimen>
+    <dimen name="viewpager_padding_horizontal">48dp</dimen>
+</resources>

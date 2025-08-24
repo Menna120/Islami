@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingHorizontal="24dp">
+    android:paddingHorizontal="@dimen/space_xlarge">
 
     <TextView
         android:id="@+id/surah_number"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="8dp"
+        android:layout_marginVertical="@dimen/margin_medium"
         android:background="@drawable/ic_arabic_art"
         android:gravity="center"
-        android:padding="16dp"
+        android:padding="@dimen/padding_large"
         android:textAppearance="@style/TextAppearance.App.TitleLarge"
         android:textColor="?attr/colorTertiary"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +28,7 @@
         android:id="@+id/surah_name_in_english"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="@dimen/space_xlarge"
         android:textAppearance="@style/TextAppearance.App.TitleLarge"
         android:textColor="?attr/colorTertiary"
         app:layout_constraintBottom_toTopOf="@+id/surah_verses"
