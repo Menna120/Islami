@@ -4,17 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gold"
-    tools:context=".ui.quran.SurahFragment">
+    android:background="@color/black"
+    tools:context=".ui.surah.SurahFragment">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Surah Fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/surah_name_in_english"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.App.Toolbar.Title"
+        app:layout_constraintBottom_toBottomOf="@+id/navigate_up_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Al-Fatiha" />
 
+    <ImageButton
+        android:id="@+id/navigate_up_button"
+        style="?attr/toolbarNavigationButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/navigate_up"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/corner_left"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        android:layout_margin="@dimen/margin_medium"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:rotation="270"
+        android:src="@drawable/corner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surah_name_in_english"
+        app:tint="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/surah_name_in_arabic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.App.HeadlineSmall"
+        app:layout_constraintBottom_toBottomOf="@id/corner_left"
+        app:layout_constraintLeft_toRightOf="@id/corner_left"
+        app:layout_constraintRight_toLeftOf="@+id/corner_right"
+        app:layout_constraintTop_toTopOf="@id/corner_left"
+        tools:text="الفاتحه" />
+
+    <ImageView
+        android:id="@+id/corner_right"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/corner"
+        app:layout_constraintBottom_toBottomOf="@+id/corner_left"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/corner_left"
+        app:tint="?attr/colorPrimary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/verses_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/padding_large"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/mosque_gradient_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/corner_left"
+        tools:listitem="@layout/item_verse" />
+
+    <ImageView
+        android:id="@+id/mosque_gradient_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/mosque"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
