@@ -46,7 +46,7 @@ Watch a quick demonstration of the app in action:
 This project likely utilizes a modern Android development stack:
 
 * **Language:** Kotlin
-* **UI Framework:** Android XML with Material Components, or Jetpack Compose.
+* **UI Framework:** Android XML.
 * **Navigation:** Android Navigation Component for navigating between screens/fragments.
 * **Data Handling:**
     * Reading Quran and Hadith data from local assets (`.txt` files, JSON) or a local database (
